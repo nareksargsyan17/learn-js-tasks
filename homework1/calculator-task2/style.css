@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 25%;
+    height: 60vh;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(239, 239, 239);
+    border-radius: 20px 20px 5px 5px;
+}
+#content{
+    height: 35%;
+    text-align: right;
+}
+#content > *{
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    padding-right: 10px;
+}
+#content > * > *{
+    padding: 5px 0px;
+    overflow: scroll;
+    scroll-margin-block-end:inherit;
+}
+#content > *>*::-webkit-scrollbar {
+    display: none;
+}
+#answer{
+    height: 30%;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+#action{
+    height: 40%;
+    background-color: white;
+    margin: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+table{
+    border-spacing: 5px;
+    align-self: center;
+    width: 100%;
+}
+td{
+    box-shadow: 0.3px 0.3px 0.3px 0.3px gray;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+tr:last-child>td:last-child{
+    background-color: rgb(17, 94, 201);
+    color: white;
+}
+tr:last-child>td:last-child:hover{
+    background-color: rgb(39, 115, 220);
+}
+td:hover{
+    background-color:rgb(246, 245, 245);
+}
+td>img{
+    width: 25%;
+}
